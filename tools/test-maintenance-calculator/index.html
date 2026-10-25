@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Test Maintenance Cost Calculator | Test Verity</title><meta name="description" content="Estimate the annual hours and cost of locator and flaky-test maintenance, then see what a 40% reduction would save."><link rel="canonical" href="https://tahashaikh.github.io/tools/test-maintenance-calculator/"><meta name="robots" content="index, follow, max-image-preview:large"><meta name="theme-color" content="#0f766e"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="Test Verity" href="/rss.xml"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:site_name" content="Test Verity"><meta property="og:title" content="Test Maintenance Cost Calculator | Test Verity"><meta property="og:description" content="Estimate the annual hours and cost of locator and flaky-test maintenance, then see what a 40% reduction would save."><meta property="og:url" content="https://tahashaikh.github.io/tools/test-maintenance-calculator/"><meta property="og:image" content="https://tahashaikh.github.io/og-default.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="en_US"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Test Maintenance Cost Calculator | Test Verity"><meta name="twitter:description" content="Estimate the annual hours and cost of locator and flaky-test maintenance, then see what a 40% reduction would save."><meta name="twitter:image" content="https://tahashaikh.github.io/og-default.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Test Verity","url":"https://tahashaikh.github.io","logo":"https://tahashaikh.github.io/favicon.svg","email":"hello@testverity.com","foundingDate":"2026","founder":{"@type":"Person","name":"Muhammad Taha Tariq","url":"https://tahashaikh.github.io/author/muhammad-taha-tariq/"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Test Maintenance Cost Calculator","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Estimate the annual cost of locator and flaky-test maintenance, and the savings from a reduction."}</script><link rel="stylesheet" href="/_astro/about.DuTptq0F.css"><script type="module" src="/_astro/page.DTIbhfSr.js"></script></head> <body> <a class="skip-link" href="#main">
+Skip to content
+</a> <header class="site-header"> <div class="container site-header__inner"> <a class="brand" href="/" aria-label="Test Verity home"> <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"> <rect width="64" height="64" rx="16" fill="#0b1215"></rect> <path d="M12 34h8l5 9 8-22 5 13h14" fill="none" stroke="#2dd4bf" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"></path> <circle cx="52" cy="34" r="3.5" fill="#fbbf24"></circle> </svg> <span>Test Verity</span> </a> <nav class="nav" aria-label="Main navigation"> <a href="/"> Home </a><a href="/category/qa/"> QA </a><a href="/articles/"> All Guides </a><a href="/about/"> About </a><a href="/contact/"> Contact </a> </nav> </div> </header> <main id="main">  <div class="container container--narrow"> <section class="hero" style="padding-bottom:1rem"> <span class="hero__eyebrow">Free tool · no signup</span> <h1>Test maintenance cost calculator</h1> <p>
+Put your own numbers on flaky tests and locator fixes. The output is an estimate, not a
+        vendor claim.
+</p> </section> <div class="calc"> <div class="calc__grid"> <div> <label for="tests">Automated tests in the suite</label> <input id="tests" type="number" min="0" step="10" value="500" inputmode="numeric"> </div> <div> <label for="churn">Tests needing locator work per year (%)</label> <input id="churn" type="number" min="0" max="100" step="1" value="15" inputmode="numeric"> </div> <div> <label for="hours">Hours per fix</label> <input id="hours" type="number" min="0" step="0.5" value="1.5" inputmode="decimal"> </div> <div> <label for="rate">Loaded hourly cost (USD)</label> <input id="rate" type="number" min="0" step="5" value="25" inputmode="numeric"> </div> <div> <label for="reduction">Expected reduction (%)</label> <input id="reduction" type="number" min="0" max="100" step="5" value="40" inputmode="numeric"> </div> </div> <div class="calc__results" aria-live="polite"> <div> <div class="calc__label">Tests touched per year</div> <div class="calc__value" id="affected">
+—
+</div> </div> <div> <div class="calc__label">Current hours per year</div> <div class="calc__value" id="currentHours">
+—
+</div> </div> <div> <div class="calc__label">Current annual cost</div> <div class="calc__value" id="currentCost">
+—
+</div> </div> <div> <div class="calc__label">Hours saved per year</div> <div class="calc__value" id="savedHours">
+—
+</div> </div> <div> <div class="calc__label">Cost saved per year</div> <div class="calc__value" id="savedCost">
+—
+</div> </div> </div> </div> <div class="prose" style="margin-top:2rem"> <h2>What the estimate assumes</h2> <ul> <li>One fix per affected test per year.</li> <li>Maintenance time means locator repair, re-runs, and the review around them.</li> <li>
+The reduction is the share of that work you expect to remove, not a vendor guarantee.
+</li> </ul> <p>
+A real suite also carries environment, data, and assertion maintenance. This tool covers the
+        locator and flake slice because that is the part self-healing and AI repair claim to reduce.
+</p> <h2>Use it before a vendor demo</h2> <p>
+Take the current annual cost into the demo. Ask the vendor what share of that number their
+        tool actually removes, and what review time it adds back. If the answer is vague, the number
+        is marketing.
+</p> <p>
+Read the <a href="/category/qa/">QA guides</a> for the tool comparison, or start with
+<a href="/articles/self-healing-test-automation-2026/">self-healing test automation</a>.
+</p> </div> </div> <script>
+    const ids = ['tests', 'churn', 'hours', 'rate', 'reduction'];
+    const el = (id) => document.getElementById(id);
+    const money = (n) => '$' + Math.round(n).toLocaleString('en-US');
+
+    function calculate() {
+      const tests = Number(el('tests').value) || 0;
+      const churn = Number(el('churn').value) || 0;
+      const hours = Number(el('hours').value) || 0;
+      const rate = Number(el('rate').value) || 0;
+      const reduction = Number(el('reduction').value) || 0;
+
+      const affected = tests * (churn / 100);
+      const currentHours = affected * hours;
+      const currentCost = currentHours * rate;
+      const savedHours = currentHours * (reduction / 100);
+      const savedCost = currentCost * (reduction / 100);
+
+      el('affected').textContent = Math.round(affected).toLocaleString('en-US');
+      el('currentHours').textContent = Math.round(currentHours).toLocaleString('en-US') + ' h';
+      el('currentCost').textContent = money(currentCost);
+      el('savedHours').textContent = Math.round(savedHours).toLocaleString('en-US') + ' h';
+      el('savedCost').textContent = money(savedCost);
+    }
+
+    ids.forEach((id) => el(id).addEventListener('input', calculate));
+    calculate();
+  </script>  </main> <footer class="site-footer"> <div class="container"> <div class="footer-grid"> <div> <p style="max-width:36ch"> Independent QA tool reviews for real testing work. Independent reviews for QA and software teams. We check the docs, the
+          price, and the claims — and we say what we did not test.
+</p> </div> <div> <h3>Explore</h3> <ul> <li> <a href="/articles/">All guides</a> </li> <li> <a href="/category/qa/">QA guides</a> </li> <li> <a href="/tools/test-maintenance-calculator/">Maintenance calculator</a> </li> <li> <a href="/author/muhammad-taha-tariq/">Author</a> </li> <li> <a href="/about/">About us</a> </li> <li> <a href="/contact/">Contact</a> </li> <li> <a href="/rss.xml">RSS feed</a> </li> </ul> </div> <div> <h3>Legal</h3> <ul> <li> <a href="/privacy-policy/">Privacy policy</a> </li> <li> <a href="/terms/">Terms of use</a> </li> <li> <a href="/disclaimer/">Disclaimer</a> </li> </ul> </div> </div> <div class="footer-bottom"> <span>&copy; 2026 · Independent QA tool reviews.</span> <span>
+Published by <a href="/">Test Verity</a>.
+</span> </div> </div> </footer> </body></html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Test Verity">
+  <rect width="64" height="64" rx="16" fill="#0b1215"/>
+  <path d="M12 34h8l5 9 8-22 5 13h14" fill="none" stroke="#2dd4bf" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="52" cy="34" r="3.5" fill="#fbbf24"/>
+</svg>

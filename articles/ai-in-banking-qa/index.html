@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI in Banking QA: What Works, What Compliance Blocks</title><meta name="description" content="Where AI actually helps a bank testing team, where DORA and model-risk expectations stop it, and the data and evidence rules to settle before you buy a tool."><link rel="canonical" href="https://tahashaikh.github.io/articles/ai-in-banking-qa/"><meta name="robots" content="index, follow, max-image-preview:large"><meta name="theme-color" content="#0f766e"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="Test Verity" href="/rss.xml"><!-- Open Graph --><meta property="og:type" content="article"><meta property="og:site_name" content="Test Verity"><meta property="og:title" content="AI in Banking QA: What Works, What Compliance Blocks"><meta property="og:description" content="Where AI actually helps a bank testing team, where DORA and model-risk expectations stop it, and the data and evidence rules to settle before you buy a tool."><meta property="og:url" content="https://tahashaikh.github.io/articles/ai-in-banking-qa/"><meta property="og:image" content="https://tahashaikh.github.io/og-default.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="en_US"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AI in Banking QA: What Works, What Compliance Blocks"><meta name="twitter:description" content="Where AI actually helps a bank testing team, where DORA and model-risk expectations stop it, and the data and evidence rules to settle before you buy a tool."><meta name="twitter:image" content="https://tahashaikh.github.io/og-default.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Test Verity","url":"https://tahashaikh.github.io","logo":"https://tahashaikh.github.io/favicon.svg","email":"hello@testverity.com","foundingDate":"2026","founder":{"@type":"Person","name":"Muhammad Taha Tariq","url":"https://tahashaikh.github.io/author/muhammad-taha-tariq/"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI in Banking QA: What Works, What Compliance Blocks","description":"Where AI actually helps a bank testing team, where DORA and model-risk expectations stop it, and the data and evidence rules to settle before you buy a tool.","datePublished":"2026-10-24T00:00:00.000Z","dateModified":"2026-10-24T00:00:00.000Z","author":{"@type":"Person","name":"Muhammad Taha Tariq","url":"https://tahashaikh.github.io/author/muhammad-taha-tariq/","jobTitle":"Software Automation Engineer & Editor"},"publisher":{"@type":"Organization","name":"Test Verity","logo":{"@type":"ImageObject","url":"https://tahashaikh.github.io/favicon.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tahashaikh.github.io/articles/ai-in-banking-qa/"},"image":"https://tahashaikh.github.io/og-default.png","articleSection":"Banking","keywords":"banking QA, DORA, model risk management, test automation, regulated testing","inLanguage":"en-US","isAccessibleForFree":true}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tahashaikh.github.io"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://tahashaikh.github.io/articles/"},{"@type":"ListItem","position":3,"name":"AI in Banking QA: What Works, What Compliance Blocks","item":"https://tahashaikh.github.io/articles/ai-in-banking-qa/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can banks use AI tools to generate test cases?","acceptedAnswer":{"@type":"Answer","text":"Yes, with controls. The common pattern is AI-assisted drafting of cases and coverage analysis, followed by human review and traceability to requirements. The tool must not receive production customer data, and the evidence must remain exportable and versioned for auditors."}},{"@type":"Question","name":"Does DORA require AI testing tools?","acceptedAnswer":{"@type":"Answer","text":"No. DORA requires a digital operational resilience testing programme, including vulnerability assessments, source code reviews where feasible, scenario-based tests, performance testing, end-to-end testing and penetration testing. It does not mandate AI. AI is one way to produce or maintain those tests; the obligations are about coverage, independence and evidence."}},{"@type":"Question","name":"Is a test-generation tool a model under SR 11-7?","acceptedAnswer":{"@type":"Answer","text":"Usually not, because it does not produce a quantitative output used for a business decision. But if the AI output influences a credit, risk, or customer decision, or your model inventory policy defines it as a model, validation expectations can apply. That classification is for your risk function to make, not the vendor."}},{"@type":"Question","name":"What is the biggest blocker to AI adoption in banking QA?","acceptedAnswer":{"@type":"Answer","text":"Data. Test environments are supposed to hold anonymised, pseudonymised or randomised production data, and most AI tools are cloud services. Until the data path, retention, training use and audit logging are approved, the tool cannot be used on realistic scenarios."}}]}</script><link rel="stylesheet" href="/_astro/about.DuTptq0F.css"><script type="module" src="/_astro/page.DTIbhfSr.js"></script></head> <body> <a class="skip-link" href="#main">
+Skip to content
+</a> <header class="site-header"> <div class="container site-header__inner"> <a class="brand" href="/" aria-label="Test Verity home"> <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"> <rect width="64" height="64" rx="16" fill="#0b1215"></rect> <path d="M12 34h8l5 9 8-22 5 13h14" fill="none" stroke="#2dd4bf" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"></path> <circle cx="52" cy="34" r="3.5" fill="#fbbf24"></circle> </svg> <span>Test Verity</span> </a> <nav class="nav" aria-label="Main navigation"> <a href="/"> Home </a><a href="/category/qa/"> QA </a><a href="/articles/"> All Guides </a><a href="/about/"> About </a><a href="/contact/"> Contact </a> </nav> </div> </header> <main id="main">  <div class="container"> <header class="article-head"> <ol class="breadcrumbs"> <li> <a href="/">Home</a> </li> <li> <a href="/articles/">Guides</a> </li> <li> <a href="/category/banking/">Banking</a> </li> </ol> <span class="pill">Banking</span> <h1>AI in Banking QA: What Works, What Compliance Blocks</h1> <p class="article-head__desc">Where AI actually helps a bank testing team, where DORA and model-risk expectations stop it, and the data and evidence rules to settle before you buy a tool.</p> <div class="byline"> <span>
+By  <a href="/author/muhammad-taha-tariq/"> <strong>Muhammad Taha Tariq</strong> </a>
+, Software Automation Engineer &amp; Editor </span> <span class="byline__dot" aria-hidden="true"></span> <span>Published October 24, 2026</span>  <span class="byline__dot" aria-hidden="true"></span> <span>Updated October 24, 2026</span>  <span class="byline__dot" aria-hidden="true"></span> <span>5 min read</span> </div> </header> <div class="layout-article"> <article> <aside class="glance" aria-label="At a glance"> <div class="glance__top">  <p class="glance__summary">AI can draft tests and sort failures. It cannot sign off a release, replace audit evidence, or validate a model.</p> </div> <dl class="glance__grid"> <div> <dt>Best for</dt> <dd>QA leads in banks and regulated delivery</dd> </div> <div> <dt>Price / effort</dt> <dd>Depends on the tool; most are quote-based</dd> </div> <div> <dt>Last checked</dt> <dd>October 2026</dd> </div> </dl> <div class="glance__evidence"> <div> <h3>What we checked</h3> <ul> <li>DORA Article 25 and RTS 2024/1774</li><li>SR 11-7 and SR 26-2</li><li>Vendor data-handling claims</li> </ul> </div> <div> <h3>What we did not check</h3> <ul> <li>A live bank deployment</li><li>Your jurisdiction-specific rules</li> </ul> </div> </div> </aside> <div class="prose"> <p>Banking QA teams are not slow because testers are slow. They are slow because every release needs traceability (a clear link from requirement to test to result), approved test data, independent evidence, and a final approval that survives an audit. AI can compress the drafting and triage work. It cannot compress the accountability.</p>
+<p>This is the practical split: what AI can do inside a regulated bank, what it cannot, and the questions to settle before a vendor demo.</p>
+<blockquote>
+<p>This is an editorial guide, not regulatory advice. DORA applies to EU financial entities; other jurisdictions have their own rules. Confirm obligations with your compliance and risk functions.</p>
+</blockquote>
+<h2 id="what-regulators-actually-require">What regulators actually require</h2>
+<p><strong>DORA (EU 2022/2554)</strong> has applied since 17 January 2025. Article 25 requires a testing programme. It includes, as appropriate: vulnerability scans, open-source analyses, network security assessments, gap analyses, physical security reviews, source code reviews where feasible, scenario-based tests, compatibility testing, performance testing, end-to-end testing, and penetration testing.</p>
+<p>The Austrian regulator’s guidance adds the practical expectations. Test systems that support critical functions at least once a year. Classify and fix weaknesses. Keep the evidence ready for supervisors.</p>
+<p><strong>DORA RTS 2024/1774, Article 16</strong> is the clause most test teams feel first. Non-production environments should hold only anonymised, pseudonymised, or randomised production data. Production data in a test environment is an exception: specific occasions, limited time, approval by the relevant function, and reported to the ICT risk function.</p>
+<p><strong>Model risk guidance (SR 11-7, and the revised SR 26-2 issued 17 April 2026)</strong> sets the validation shape: conceptual soundness, ongoing monitoring, outcomes analysis, and independent challenge. If an AI system is used in a decision that affects customers or risk, expect the same treatment: documentation, testing, monitoring, and a named owner.</p>
+<h2 id="where-ai-fits">Where AI fits</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Task</th><th>Fit</th><th>Why</th></tr></thead><tbody><tr><td>Draft test cases from requirements</td><td>Good with review</td><td>Fast first pass; weak on negative paths and regulatory edge cases</td></tr><tr><td>Coverage gap analysis</td><td>Good</td><td>Useful on large requirement sets and regression inventories</td></tr><tr><td>Failure triage and log summarisation</td><td>Good</td><td>Cuts time to first hypothesis; keep the raw evidence</td></tr><tr><td>Test data generation</td><td>Conditional</td><td>Must match masking and distribution rules; synthetic data can miss real edge cases</td></tr><tr><td>Self-healing locators</td><td>Good for web regression</td><td>Reduces maintenance; can hide a real UI change if over-trusted</td></tr><tr><td>Change-impact analysis</td><td>Promising</td><td>Helps pick a regression subset; validate against historical escapes</td></tr><tr><td>Writing the audit narrative</td><td>Draft only</td><td>A human must own every statement sent to a regulator</td></tr></tbody></table>
+<p>The pattern that works is <strong>AI drafts, a human decides, the system records</strong>. The pattern that fails is an AI output becoming the evidence.</p>
+<h2 id="where-it-does-not-fit">Where it does not fit</h2>
+<ul>
+<li><strong>Final release approval.</strong> A named person still owns it. It cannot be given to a model.</li>
+<li><strong>Regulatory evidence.</strong> Auditors need versioned artifacts, not a chat transcript.</li>
+<li><strong>Production customer data.</strong> Do not paste it into a general assistant. This is the fastest way to create a reportable incident.</li>
+<li><strong>Model validation.</strong> If the AI influences a decision, validation and monitoring are a separate discipline.</li>
+<li><strong>Risk acceptance.</strong> The tool can rank risks; the risk owner accepts them.</li>
+</ul>
+<h2 id="the-data-rule-in-practice">The data rule, in practice</h2>
+<p>Before any pilot, settle five things in writing:</p>
+<ol>
+<li><strong>Where the data lives.</strong> Region, tenancy, subprocessors, retention.</li>
+<li><strong>Whether your data trains the vendor’s models.</strong> Get a contractual no, not a marketing page.</li>
+<li><strong>What is logged.</strong> Prompt and output logging is required for your evidence trail, and also a privacy exposure. Decide who can read it.</li>
+<li><strong>How deletion works.</strong> Test data, prompts, screenshots, and any fine-tuned artifacts.</li>
+<li><strong>Which environment is allowed.</strong> DORA’s default is anonymised, pseudonymised, or randomised data in non-production.</li>
+</ol>
+<p>If a vendor cannot answer these in a security questionnaire without a sales call, that is the answer.</p>
+<h2 id="a-workflow-that-survives-audit">A workflow that survives audit</h2>
+<ol>
+<li><strong>Requirement to test.</strong> AI drafts cases from the approved requirement. A human reviews and links each case to the requirement ID.</li>
+<li><strong>Data.</strong> Cases run only on approved non-production data. The data source and masking method are recorded.</li>
+<li><strong>Execution.</strong> CI runs the suite; results attach traces, logs, and environment metadata.</li>
+<li><strong>Triage.</strong> AI summarises the failure; the engineer confirms the root cause.</li>
+<li><strong>Evidence.</strong> The traceability matrix, test results, and final approval are exported and versioned.</li>
+<li><strong>Change control.</strong> When the AI tool or model version changes, record it and re-run a control set.</li>
+</ol>
+<p>That last step is easy to skip and hard to defend later.</p>
+<h2 id="questions-to-ask-a-vendor">Questions to ask a vendor</h2>
+<ul>
+<li>Do you have a validation or security pack my risk team can review?</li>
+<li>Can we export tests, results, and evidence in a machine-readable format?</li>
+<li>Can we pin the model version and see when it changes?</li>
+<li>Do you log prompts and outputs, and can we control retention?</li>
+<li>Which subprocessors touch our data, and in which regions?</li>
+<li>What happens to our data if we leave?</li>
+</ul>
+<h2 id="who-this-is-not-for">Who this is not for</h2>
+<p>If your test data is still copied from production without controls, fix that first. AI on top of an uncontrolled data path increases the blast radius; it does not improve quality.</p>
+<h2 id="the-bottom-line">The bottom line</h2>
+<p>AI is useful in banking QA where the output is a draft that a named human reviews: cases, coverage analysis, triage summaries, and choosing which old tests to run. It is not useful as a substitute for evidence, final approval, or model validation (checking that a model works as intended). Approve the data path and the evidence trail before you approve the licence.</p>
+<h2 id="related-reading">Related reading</h2>
+<p>If you are choosing the underlying framework, read <a href="/articles/playwright-vs-selenium-2026/">Playwright vs Selenium in 2026</a>. For the tool landscape, see <a href="/articles/best-ai-test-case-generation-tools-2026/">AI test case generation tools</a>. Teams outside banking can use <a href="/articles/best-ai-tools-for-small-law-firms/">AI tools for small law firms</a> as a comparison for confidentiality rules.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://www.digitalacts.eu/regulation/dora/article/25/testing-of-ict-tools-and-systems">DORA Article 25 — testing of ICT tools and systems</a></li>
+<li><a href="https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en">EIOPA — DORA overview</a></li>
+<li><a href="https://www.fma.gv.at/en/cross-sectoral-topics/dora/dora-digital-operational-resilience-testing/">FMA Austria — DORA testing requirements</a></li>
+<li><a href="https://nomox.eu/nomox_en/2022r2554-dora/2024r1774-ict-risk-mgt/2024r1774_en.16">DORA RTS 2024/1774, Article 16</a></li>
+<li><a href="https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107.pdf">Federal Reserve SR 11-7</a></li>
+<li><a href="https://www.federalreserve.gov/supervisionreg/srletters/SR2602.pdf">Federal Reserve SR 26-2 (April 2026)</a></li>
+</ul> </div> <section class="faq"> <h2>Frequently asked questions</h2> <details> <summary>Can banks use AI tools to generate test cases?</summary> <p>Yes, with controls. The common pattern is AI-assisted drafting of cases and coverage analysis, followed by human review and traceability to requirements. The tool must not receive production customer data, and the evidence must remain exportable and versioned for auditors.</p> </details><details> <summary>Does DORA require AI testing tools?</summary> <p>No. DORA requires a digital operational resilience testing programme, including vulnerability assessments, source code reviews where feasible, scenario-based tests, performance testing, end-to-end testing and penetration testing. It does not mandate AI. AI is one way to produce or maintain those tests; the obligations are about coverage, independence and evidence.</p> </details><details> <summary>Is a test-generation tool a model under SR 11-7?</summary> <p>Usually not, because it does not produce a quantitative output used for a business decision. But if the AI output influences a credit, risk, or customer decision, or your model inventory policy defines it as a model, validation expectations can apply. That classification is for your risk function to make, not the vendor.</p> </details><details> <summary>What is the biggest blocker to AI adoption in banking QA?</summary> <p>Data. Test environments are supposed to hold anonymised, pseudonymised or randomised production data, and most AI tools are cloud services. Until the data path, retention, training use and audit logging are approved, the tool cannot be used on realistic scenarios.</p> </details> </section>  <div class="callout"> <strong>Spotted something out of date?</strong> <p>
+Tool pricing changes constantly. If a price, feature, or limitation in this guide no
+            longer matches what you see, <a href="https://github.com/Tahashaikh/Tahashaikh.github.io/issues/new?title=Feedback%20on%20Test%20Verity">send us a note</a> and we will
+            update the page. Every correction is logged in the revision date above.
+</p> </div> <div class="author-box"> <div class="author-box__mark" aria-hidden="true"> MT </div> <div> <strong>Muhammad Taha Tariq</strong> <p>Software automation engineer working in software quality since 2018. Builds test frameworks with Playwright, Selenium, and JMeter, and reviews testing tools by checking vendor claims against primary sources.</p> <a href="/author/muhammad-taha-tariq/">About the author</a> </div> </div> </article> <aside class="toc" aria-label="On this page"> <strong>On this page</strong> <ul> <li> <a href="#what-regulators-actually-require">What regulators actually require</a> </li><li> <a href="#where-ai-fits">Where AI fits</a> </li><li> <a href="#where-it-does-not-fit">Where it does not fit</a> </li><li> <a href="#the-data-rule-in-practice">The data rule, in practice</a> </li><li> <a href="#a-workflow-that-survives-audit">A workflow that survives audit</a> </li><li> <a href="#questions-to-ask-a-vendor">Questions to ask a vendor</a> </li><li> <a href="#who-this-is-not-for">Who this is not for</a> </li><li> <a href="#the-bottom-line">The bottom line</a> </li><li> <a href="#related-reading">Related reading</a> </li><li> <a href="#sources">Sources</a> </li> </ul> </aside> </div> </div> <section class="section"> <div class="container"> <div class="section__head"> <h2>Keep reading</h2> <a href="/articles/">All guides &rarr;</a> </div> <div class="grid grid--3"> <a class="card" href="/articles/self-healing-test-automation-2026/"> <span class="card__cat">QA</span> <h3 class="card__title">Self-Healing Test Automation in 2026: What It Fixes and What It Hides</h3> <p class="card__desc">Self-healing repairs element locators, not broken tests. Here is how the main approaches work, the false-positive risk, and the metrics to demand before you buy.</p> <div class="card__meta"> <span>Oct 24, 2026</span> <span>4 min read</span> </div> </a><a class="card" href="/articles/best-ai-meeting-note-takers/"> <span class="card__cat">Productivity</span> <h3 class="card__title">Best AI Meeting Note Takers in 2026</h3> <p class="card__desc">A side-by-side look at the leading AI note takers — bot-based vs local capture, accuracy, privacy, and which one fits how your team actually meets.</p> <div class="card__meta"> <span>Oct 23, 2026</span> <span>4 min read</span> </div> </a><a class="card" href="/articles/best-ai-tools-for-nonprofits/"> <span class="card__cat">Nonprofit</span> <h3 class="card__title">Best AI Tools for Nonprofits in 2026: Grants &amp; Donors</h3> <p class="card__desc">AI that helps lean nonprofit teams write grants, steward donors, and report to funders — with the donor-privacy and disclosure rules you should not skip.</p> <div class="card__meta"> <span>Oct 23, 2026</span> <span>4 min read</span> </div> </a> </div> </div> </section> </main> <footer class="site-footer"> <div class="container"> <div class="footer-grid"> <div> <p style="max-width:36ch"> Independent QA tool reviews for real testing work. Independent reviews for QA and software teams. We check the docs, the
+          price, and the claims — and we say what we did not test.
+</p> </div> <div> <h3>Explore</h3> <ul> <li> <a href="/articles/">All guides</a> </li> <li> <a href="/category/qa/">QA guides</a> </li> <li> <a href="/tools/test-maintenance-calculator/">Maintenance calculator</a> </li> <li> <a href="/author/muhammad-taha-tariq/">Author</a> </li> <li> <a href="/about/">About us</a> </li> <li> <a href="/contact/">Contact</a> </li> <li> <a href="/rss.xml">RSS feed</a> </li> </ul> </div> <div> <h3>Legal</h3> <ul> <li> <a href="/privacy-policy/">Privacy policy</a> </li> <li> <a href="/terms/">Terms of use</a> </li> <li> <a href="/disclaimer/">Disclaimer</a> </li> </ul> </div> </div> <div class="footer-bottom"> <span>&copy; 2026 · Independent QA tool reviews.</span> <span>
+Published by <a href="/">Test Verity</a>.
+</span> </div> </div> </footer> </body></html>
